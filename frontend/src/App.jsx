@@ -5,9 +5,9 @@ import {
 import './App.css'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
-import ArticlesList from './pages/ArticlesList'
 import ArticlePage from './pages/ArticlePage' 
 import Layout from './Layout'
+import ArticlesListPage from './pages/ArticlesListPage'
 
 const routes = [{
   path:'/',
@@ -22,7 +22,7 @@ const routes = [{
   },
   {
     path:'/articles',   
-    element: <ArticlesList/>, 
+    element: <ArticlesListPage/>, 
   },
   {
     path:'/articles/:name',

@@ -26,7 +26,7 @@ app.post('/api/articles/:name/upvote', (req,res)=>{
     const article = articleInfo.find(a => a.name === req.params.name)
     article.upvotes+=1
 
-    res.send('Success! The article ' + req.params.name + ' now has ' + article.upvotes + ' upvotes now')
+    res.send('Hooray! The article ' + req.params.name + ' now has ' + article.upvotes + ' upvotes now')
 })
 
 
